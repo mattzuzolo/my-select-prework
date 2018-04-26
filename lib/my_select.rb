@@ -5,7 +5,7 @@ def my_select(collection)
      
      while collection.length > i
      
-        #need to check for true value THEN add it to the array
+        #check if yield returns True or False — if true, shovel at given index
         if yield(collection[i])
             new_collection << yield(collection[i])
         end
