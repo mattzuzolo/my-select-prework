@@ -6,7 +6,7 @@ def my_select(collection)
      while collection.length > i
      
         #check if yield returns True or False — if true, shovel at given index
-        if yield(collection[i])
+        if (collection[i])
             new_collection << yield(collection[i])
         end
         i += 1
